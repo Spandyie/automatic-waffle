@@ -98,16 +98,18 @@ int GeneticAlgorithm::find_max(const std::vector<double>& input_vector){
 }
 
 
-void GeneticAlgorithm::run(){
+std::tuple<double, std::vector<double>> GeneticAlgorithm::run(){
     // equation = w1 x1 + w2 x2 + w3 x3;
     auto new_population = generate_uniform_random_vector(m_pop_size);
     int m_number_of_offspring = m_pop_size.first - num_parents;
+    int idx_max_fitness{0};
+    std::vector<double>::iterator max_fitness_value;
     m_offspring_size = std::make_pair(m_number_of_offspring, m_equation_param.size());
     for(int i=0; i < m_num_generations;++i){
         auto fitness = calc_pop_fitness(new_population);
         // print the fitness
-        auto idx_max_fitness = find_max(fitness);
-        auto max_fitness_value =  std::max_element(fitness.begin(), fitness.end());
+        idx_max_fitness = find_max(fitness);
+        max_fitness_value =  std::max_element(fitness.begin(), fitness.end());
         std::cout << "the value of fitness function is: " << *max_fitness_value << "\n";
         std::for_each(new_population.at(idx_max_fitness).begin(), new_population.at(idx_max_fitness).end(), [](auto& val){std::cout << val <<" ";});
         std::cout << "\n";
@@ -125,5 +127,5 @@ void GeneticAlgorithm::run(){
         new_population.insert(position2, std::make_move_iterator(crossover_mutated_offspring.begin()), std::make_move_iterator(crossover_mutated_offspring.end()));
 
     }
-
+    return std::make_tuple(*max_fitness_value, new_population.at(idx_max_fitness));
 }

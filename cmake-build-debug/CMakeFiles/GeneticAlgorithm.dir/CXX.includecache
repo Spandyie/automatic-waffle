@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/spandan/CLionProjects/GeneticAlgorithm/GeneticAlgorithm.cpp
-GeneticAlgorithm.h
-/home/spandan/CLionProjects/GeneticAlgorithm/GeneticAlgorithm.h
-
 /home/spandan/CLionProjects/GeneticAlgorithm/GeneticAlgorithm.h
 iostream
 -
@@ -24,6 +20,8 @@ algorithm
 limits
 -
 iterator
+-
+tuple
 -
 
 /home/spandan/CLionProjects/GeneticAlgorithm/main.cpp

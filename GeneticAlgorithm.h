@@ -11,7 +11,7 @@
 #include <algorithm>
 #include <limits>
 #include <iterator>
-
+#include <tuple>
 
 std::vector<std::vector<double>> generate_uniform_random_vector(std::pair<int, int> shape);
 
@@ -31,7 +31,7 @@ public:
     GeneticAlgorithm(std::pair<int, int>& t_pop_size, std::vector<double>& t_equation_param, int t_num_generations ): m_pop_size(t_pop_size),m_equation_param(t_equation_param), m_num_generations(t_num_generations){
         num_parents = 2;
     }
-    void run();
+    std::tuple<double, std::vector<double>> run();
     static int find_max(const std::vector<double>& input_vector);
 };
 
