@@ -1,0 +1,14 @@
+//
+// Created by spandan on 7/3/19.
+//
+
+#ifndef GENETICALGORITHM_GENETICALGORITHM_H
+#define GENETICALGORITHM_GENETICALGORITHM_H
+
+
+class GeneticAlgorithm {
+
+};
+
+
+#endif //GENETICALGORITHM_GENETICALGORITHM_H
