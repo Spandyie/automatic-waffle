@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/spandan/CLionProjects/GeneticAlgorithm/GeneticAlgorithm.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/spandan/CLionProjects/GeneticAlgorithm/GeneticAlgorithm.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/home/spandan/CLionProjects/GeneticAlgorithm/main.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>

@@ -123,6 +123,33 @@ GeneticAlgorithm/fast:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/build
 .PHONY : GeneticAlgorithm/fast
 
+GeneticAlgorithm.o: GeneticAlgorithm.cpp.o
+
+.PHONY : GeneticAlgorithm.o
+
+# target to build an object file
+GeneticAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/GeneticAlgorithm.cpp.o
+.PHONY : GeneticAlgorithm.cpp.o
+
+GeneticAlgorithm.i: GeneticAlgorithm.cpp.i
+
+.PHONY : GeneticAlgorithm.i
+
+# target to preprocess a source file
+GeneticAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/GeneticAlgorithm.cpp.i
+.PHONY : GeneticAlgorithm.cpp.i
+
+GeneticAlgorithm.s: GeneticAlgorithm.cpp.s
+
+.PHONY : GeneticAlgorithm.s
+
+# target to generate assembly for a file
+GeneticAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/GeneticAlgorithm.cpp.s
+.PHONY : GeneticAlgorithm.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... GeneticAlgorithm"
 	@echo "... edit_cache"
+	@echo "... GeneticAlgorithm.o"
+	@echo "... GeneticAlgorithm.i"
+	@echo "... GeneticAlgorithm.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
