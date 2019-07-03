@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/spandan/CLionProjects/GeneticAlgorithm/main.cpp
+iostream
+-
+vector
+-
+numeric
+-
+random
+-
+algorithm
+-
+limits
+-
+iterator
+-
+
