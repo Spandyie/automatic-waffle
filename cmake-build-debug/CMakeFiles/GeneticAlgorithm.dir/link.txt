@@ -1,1 +1,0 @@
-/usr/bin/clang++  -g   CMakeFiles/GeneticAlgorithm.dir/main.cpp.o CMakeFiles/GeneticAlgorithm.dir/GeneticAlgorithm.cpp.o  -o GeneticAlgorithm 

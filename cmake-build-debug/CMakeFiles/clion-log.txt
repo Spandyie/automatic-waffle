@@ -1,4 +1,0 @@
-/snap/clion/73/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" /home/spandan/CLionProjects/GeneticAlgorithm
--- Configuring done
--- Generating done
--- Build files have been written to: /home/spandan/CLionProjects/GeneticAlgorithm/cmake-build-debug
